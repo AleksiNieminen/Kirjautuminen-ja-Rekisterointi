@@ -1,18 +1,55 @@
+/*bodyn yleiset*/
+body {
+  margin: 0;
+  display: flex;
+  background-color: #f0f0f0; /*taustaväri*/
+}
+
+/*kirjautumis/rekisteröitymissivun asettelu*/
+body.auth-page {
+  justify-content: center; /*vaakasuuntainen keskitys*/
+  align-items: center; /*pystysuuntainen keskitys*/
+  min-height: 100vh; /*sivu vähintään 1 näytön korkuinen, muuten ei mene keskelle*/
+}
+
+/*Laatikot*/
 .container {
+  /*asettelu sivulla*/
   display: flex;
   flex-direction: column;
+
+  /*malli ja muoto*/
+  border: 2px solid #333;
+  border-radius: 30px;
+
+  /*sisältö*/
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*Varjostus*/
+  min-width: 300px;
 }
+
+/*body.auth-page .container { }*/ /*kirjautumis/rekisteröitymis sivun laatikko tulevaisuutta varten*/
+
+/*Otasikon container*/
 .contheader {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+/**/
+/*Labelin container*/
 .contlabel {
   margin: 5px 5px 0 5px;
 }
+/**/
+/*Syötteen container*/
 .continput {
   margin: 0 0px 5px 5px;
 }
+/**/
+/*buttonin Container*/
 .contbutton {
   margin: 15px 5px 20px 5px;
+  cursor: pointer; /*Sormi ikoni*/
 }

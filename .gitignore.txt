@@ -1,0 +1,11 @@
+# Käyttöjärjestelmän turhat
+.DS_Store
+Thumbs.db
+
+# Editorien asetukset
+.vscode/
+.idea/
+
+# Node.js
+node_modules
+.env
