@@ -1,15 +1,43 @@
+/*buttoneiden yleiset*/
+button {
+  min-height: 40px;
+  min-width: 100px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/*labeleiden yleiset*/
+label {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/*labeleiden yleiset*/
+input {
+  min-height: 30px;
+  font-size: 20px;
+  border-radius: 10px;
+  border-color: #333;
+  border-width: 1px;
+}
+
 /*bodyn yleiset*/
 body {
   margin: 0;
   display: flex;
   background-color: #f0f0f0; /*taustaväri*/
+
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*kirjautumis/rekisteröitymissivun asettelu*/
 body.auth-page {
+  min-height: 100vh; /*sivu vähintään 1 näytön korkuinen, muuten ei mene keskelle*/
+  width: 100vw;
+  display: flex;
   justify-content: center; /*vaakasuuntainen keskitys*/
   align-items: center; /*pystysuuntainen keskitys*/
-  min-height: 100vh; /*sivu vähintään 1 näytön korkuinen, muuten ei mene keskelle*/
 }
 
 /*Laatikot*/
@@ -17,6 +45,7 @@ body.auth-page {
   /*asettelu sivulla*/
   display: flex;
   flex-direction: column;
+  transform: translate(-30px, -30px); /*jotta näyttäisi olevan keskellä*/
 
   /*malli ja muoto*/
   border: 2px solid #333;
@@ -40,16 +69,16 @@ body.auth-page {
 /**/
 /*Labelin container*/
 .contlabel {
-  margin: 5px 5px 0 5px;
+  margin: 15px 15px 0 15px;
 }
 /**/
 /*Syötteen container*/
 .continput {
-  margin: 0 0px 5px 5px;
+  margin: 0 15px 15px 15px;
 }
 /**/
 /*buttonin Container*/
 .contbutton {
-  margin: 15px 5px 20px 5px;
+  margin: 25px 15px 35px 15px;
   cursor: pointer; /*Sormi ikoni*/
 }
