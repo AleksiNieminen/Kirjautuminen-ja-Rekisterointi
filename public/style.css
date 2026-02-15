@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.contheader {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contlabel {
+  margin: 5px 5px 0 5px;
+}
+.continput {
+  margin: 0 0px 5px 5px;
+}
+.contbutton {
+  margin: 15px 5px 20px 5px;
+}
