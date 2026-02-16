@@ -5,6 +5,7 @@ button {
   border-radius: 15px;
   font-weight: bold;
   font-size: 20px;
+  cursor: pointer; /*Sormi ikoni*/
 }
 
 /*labeleiden yleiset*/
@@ -80,5 +81,4 @@ body.auth-page {
 /*buttonin Container*/
 .contbutton {
   margin: 25px 15px 35px 15px;
-  cursor: pointer; /*Sormi ikoni*/
 }
